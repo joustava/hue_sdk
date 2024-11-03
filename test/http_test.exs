@@ -12,7 +12,7 @@ defmodule HueSDK.HTTPTest do
     assert {:valid, "foo"} = verify_fun.("otp_cert", "reason", "foo")
 
     # subsequent certs will fail
-    assert {:fail, {:bad_cert, 'does not match previous cert'}} =
+    assert {:fail, {:bad_cert, "does not match previous cert"}} =
              verify_fun.("invalid_cert", "reason", "bar")
 
     # only those matching pinned cert succeed

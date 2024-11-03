@@ -5,7 +5,7 @@ defmodule HueSDK.MixProject do
     [
       app: :hue_sdk,
       version: "0.1.1",
-      elixir: "~> 1.11",
+      elixir: "~> 1.17",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps(),

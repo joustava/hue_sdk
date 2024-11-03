@@ -45,7 +45,7 @@ defmodule HueSDK.Discovery.NUPNP do
   end
 
   defp poll_for_discovery(_portal_host, max_attempts, _sleep, _attempt_no) do
-    Logger.warn("[#{__MODULE__}] exhausted #{max_attempts} discovery attempts!")
+    Logger.warning("[#{__MODULE__}] exhausted #{max_attempts} discovery attempts!")
     []
   end
 

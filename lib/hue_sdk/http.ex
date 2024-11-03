@@ -64,7 +64,7 @@ defmodule HueSDK.HTTP do
           {:valid, state}
 
         _ ->
-          {:fail, {:bad_cert, 'does not match previous cert'}}
+          {:fail, {:bad_cert, "does not match previous cert"}}
       end
     end
 

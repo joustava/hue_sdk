@@ -72,10 +72,8 @@ defmodule HueSDK.Bridge do
         %{bridge | username: username}
 
       {:ok, [%{"error" => %{"description" => description}}]} ->
-        Logger.warn(
-          "[#{__MODULE__}] Bridge failed to create user for devicetype '#{devicetype}': '#{
-            description
-          }'"
+        Logger.warning(
+          "[#{__MODULE__}] Bridge failed to create user for devicetype '#{devicetype}': '#{description}'"
         )
 
         bridge
